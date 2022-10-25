@@ -24,8 +24,12 @@ const Template: ComponentStory<typeof Button> = (args) => {
       >
         {args.variant === "round" ? (
           <DotsMenuIcon active={buttonState} />
-        ) : (
+        ) : args.variant === "rectangle" ? (
           <HomeIcon active={buttonState} />
+        ) : args.variant === "primary" ? (
+          "Primary btn"
+        ) : (
+          "Secondary btn"
         )}
       </Button>
     </ButtonContainer>
@@ -48,4 +52,14 @@ Round.args = {
 export const Rectangle = Template.bind({});
 Rectangle.args = {
   variant: "rectangle",
+};
+
+export const Primary = Template.bind({});
+Primary.args = {
+  variant: "primary",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  variant: "secondary",
 };

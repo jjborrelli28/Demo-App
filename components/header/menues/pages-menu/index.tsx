@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { css } from "../../../../../styles/stitches.config";
-import { Button } from "../../../../button";
-import { ComunityIcon } from "../../../../icons/comunity-icon";
-import { FriendsIcon } from "../../../../icons/friends-icon";
-import { HomeIcon } from "../../../../icons/home-icon";
-import { LinesMenuIcon } from "../../../../icons/lines-menu-icon";
-import { MarketplaceIcon } from "../../../../icons/marketplace-icon";
-import { WatchIcon } from "../../../../icons/watch-icon";
+import { css } from "../../../../styles/stitches.config";
+import { Button } from "../../../button";
+import { ComunityIcon } from "../../../icons/comunity-icon";
+import { FriendsIcon } from "../../../icons/friends-icon";
+import { HomeIcon } from "../../../icons/home-icon";
+import { LinesMenuIcon } from "../../../icons/lines-menu-icon";
+import { MarketplaceIcon } from "../../../icons/marketplace-icon";
+import { WatchIcon } from "../../../icons/watch-icon";
 
 export const PagesMenu = () => {
   const [page, setPage] = useState("home");

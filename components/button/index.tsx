@@ -52,7 +52,7 @@ const BaseButton = styled("button", {
         },
       },
       rectangle: {
-        h: "$full",
+        h: "calc($full - 6px)",
         w: "$full",
         my: "$3",
         b: "none",
@@ -61,6 +61,34 @@ const BaseButton = styled("button", {
 
         "&:hover": {
           backgroundColor: "$antiFlashWhite",
+        },
+      },
+      primary: {
+        backgroundColor: "$aliceBlue",
+        w: "$full",
+        color: "$blueCrayola",
+        fontSize: "$base",
+        fontWeight: "$4",
+        b: "none",
+        bra: "$1",
+        h: "36px",
+
+        "&:hover": {
+          backgroundColor: "$azureishWhite",
+        },
+      },
+      secondary: {
+        backgroundColor: "$platinum",
+        w: "$full",
+        color: "$vampireBlack",
+        fontSize: "$base",
+        fontWeight: "$4",
+        b: "none",
+        bra: "$1",
+        h: "36px",
+
+        "&:hover": {
+          backgroundColor: "$gainsboro",
         },
       },
     },
@@ -79,7 +107,7 @@ const LowerLine = styled("span", {
 
 export type ButtonProps = {
   onClick: MouseEventHandler<HTMLButtonElement>;
-  variant?: "round" | "rectangle";
+  variant?: "round" | "rectangle" | "primary" | "secondary";
   active?: boolean;
   restProps?: any;
 };

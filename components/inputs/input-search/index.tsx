@@ -26,7 +26,7 @@ export const InputSearch = () => {
       <LoupeIcon css={{ ml: "12px", transition: "all ease 0.1s" }} />
       <Input
         type="text"
-        placeholder="Search on Facebook"
+        placeholder="Search on Feisbuk"
         onFocus={focus}
         onBlur={blur}
       />
@@ -39,6 +39,12 @@ const InputContainer = styled("span", {
   bra: "$3",
   display: "flex",
   alignItems: "center",
+  h: "40px",
+  maxw: "40px",
+
+  "@bp3": {
+    maxw: "224px",
+  },
 });
 
 const Input = styled("input", {
@@ -48,9 +54,9 @@ const Input = styled("input", {
   maxw: "0",
   fontSize: "base",
 
-  "@bp4": {
+  "@bp3": {
     m: "0 $5 0 $4",
-    maxw: "$full",
+    maxw: "224px",
   },
 
   "&::placeholder": {

@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { css } from "../../../../../styles/stitches.config";
-import { Button } from "../../../../button";
-import { DotsMenuIcon } from "../../../../icons/dots-menu-icon";
-import { MenssegerIcon } from "../../../../icons/mensseger-icon";
-import { NotificationsIcon } from "../../../../icons/notifications-icon";
+import { css } from "../../../../styles/stitches.config";
+import { Button } from "../../../button";
+import { DotsMenuIcon } from "../../../icons/dots-menu-icon";
+import { MenssegerIcon } from "../../../icons/mensseger-icon";
+import { NotificationsIcon } from "../../../icons/notifications-icon";
+import Image from "next/image";
+import { HeaderProps } from "../../";
 
-export const UserMenu = () => {
+export const UserMenu = ({ user }: HeaderProps) => {
   const [userMenuState, setUserMenuState] = useState("");
 
   return (
@@ -40,18 +42,15 @@ export const UserMenu = () => {
         </Button>
       </li>
       <li>
-        <Button
-          variant="round"
-          onClick={() => setUserMenuState("menu")}
-          active={userMenuState === "menu" ?? false}
-        >
-          <img
-            src="https://randomuser.me/api/portraits/med/men/75.jpg"
+        <Button variant="round" onClick={() => setUserMenuState("")}>
+          <Image
+            alt={`${user.name.first} ${user.name.last}`}
+            loader={() => user.picture.large}
+            src={user.picture.large}
             height={40}
             width={40}
-            style={{ borderRadius: "50%" }}
+            className={css({ bra: "$round" })()}
           />
-          {/*TODO*/}
         </Button>
       </li>
     </ul>

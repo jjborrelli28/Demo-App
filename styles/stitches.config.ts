@@ -50,6 +50,8 @@ const theme = {
   },
   fontSizes: {
     base: "0.9375rem",
+    1: "1.0625rem",
+    2: "1.25rem",
   },
   space: {
     0: "0",
@@ -58,6 +60,9 @@ const theme = {
     3: "3px",
     4: "6px",
     5: "12px",
+    6: "16px",
+    7: "20px",
+    8: "32px",
   },
   sizes: {
     none: "0",
@@ -193,3 +198,15 @@ export const { styled, css, keyframes, getCssText, globalCss } = createStitches(
     },
   }
 );
+
+export const globalStyles = globalCss({
+  body: {
+    p: "0",
+    m: "0",
+  },
+
+  "*": {
+    fontFamily: "Arial",
+    boxSizing: "border-box",
+  },
+});
