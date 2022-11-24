@@ -12,13 +12,13 @@ export const Button = ({
     <BaseButton
       variant={variant}
       onClick={onClick}
-      {...restProps}
       css={{
         backgroundColor: variant === "round" && active && "$aliceBlue",
         "&:hover": {
           backgroundColor: variant === "round" && active && "$azureishWhite",
         },
       }}
+      {...restProps}
     >
       {children}
       {variant === "rectangle" && active && <LowerLine />}
@@ -39,6 +39,18 @@ const BaseButton = styled("button", {
 
   variants: {
     variant: {
+      ["small-round"]: {
+        h: "$iconSizeSmall",
+        w: "$iconSizeSmall",
+        b: "none",
+        bra: "$3",
+        backgroundColor: "$platinum",
+        transition: "background-color ease 0.1s",
+
+        "&:hover": {
+          backgroundColor: "$gainsboro",
+        },
+      },
       round: {
         h: "$iconSize",
         w: "$iconSize",
@@ -107,7 +119,8 @@ const LowerLine = styled("span", {
 
 export type ButtonProps = {
   onClick: MouseEventHandler<HTMLButtonElement>;
-  variant?: "round" | "rectangle" | "primary" | "secondary";
+  variant?: "small-round" | "round" | "rectangle" | "primary" | "secondary";
   active?: boolean;
+  css?: any;
   restProps?: any;
 };

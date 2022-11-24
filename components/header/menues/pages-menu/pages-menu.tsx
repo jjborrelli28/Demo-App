@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { css } from "../../../../styles/stitches.config";
-import { Button } from "../../../button";
+import { Button } from "../../../button/button";
 import { ComunityIcon } from "../../../icons/comunity-icon";
 import { FriendsIcon } from "../../../icons/friends-icon";
 import { HomeIcon } from "../../../icons/home-icon";

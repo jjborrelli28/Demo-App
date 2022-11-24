@@ -43,6 +43,7 @@ const InputContainer = styled("span", {
   maxw: "40px",
 
   "@bp3": {
+    w: "195px",
     maxw: "224px",
   },
 });
@@ -75,6 +76,6 @@ const focusStyle = css({
 
   "input[type=text]": {
     m: "0 $5 0 0",
-    w: "180px",
+    w: "170px",
   },
 });

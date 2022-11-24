@@ -71,6 +71,7 @@ const theme = {
     threeQuarters: "75%",
     full: "100%",
     headerHeight: "56px",
+    iconSizeSmall: "36px",
     iconSize: "40px",
   },
   radii: {

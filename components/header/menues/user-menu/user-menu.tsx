@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { css } from "../../../../styles/stitches.config";
-import { Button } from "../../../button";
+import { Button } from "../../../button/button";
 import { DotsMenuIcon } from "../../../icons/dots-menu-icon";
 import { MenssegerIcon } from "../../../icons/mensseger-icon";
 import { NotificationsIcon } from "../../../icons/notifications-icon";
 import Image from "next/image";
-import { HeaderProps } from "../../";
+import { HeaderProps } from "../../header";
 
 export const UserMenu = ({ user }: HeaderProps) => {
   const [userMenuState, setUserMenuState] = useState("");

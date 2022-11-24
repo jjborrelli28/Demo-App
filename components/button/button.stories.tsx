@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Button } from ".";
+import { Button } from "./button";
 import { HomeIcon } from "../icons/home-icon";
 import { DotsMenuIcon } from "../icons/dots-menu-icon";
 import { styled } from "../../styles/stitches.config";

@@ -1,8 +1,8 @@
-import { Main } from "../components/main";
-import { Sidebar } from "../components/sidebar";
-import { PeopleGallery } from "../components/people-gallery";
-import { Card, PersonProps } from "../components/card";
-import { Header } from "../components/header";
+import { Main } from "../components/main/main";
+import { Sidebar } from "../components/sidebar/sidebar";
+import { PeopleGallery } from "../components/people-gallery/people-gallery";
+import { Card, PersonProps } from "../components/card/card";
+import { Header } from "../components/header/header";
 import { Fragment } from "react";
 import { css } from "../styles/stitches.config";
 
@@ -36,7 +36,7 @@ const Home = ({ data }: DataProps) => {
 export default Home;
 
 export async function getStaticProps() {
-  const response = await fetch("https://randomuser.me/api/?results=36");
+  const response = await fetch("https://randomuser.me/api/?results=37");
 
   const result = await response.json();
 

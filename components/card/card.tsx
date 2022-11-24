@@ -1,7 +1,7 @@
 import { css, styled } from "../../styles/stitches.config";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../button";
+import { Button } from "../button/button";
 
 export const Card = ({ data }: CardProps) => {
   return (
@@ -40,6 +40,8 @@ const CardContainer = styled("div", {
   "-webkit-box-shadow": "0px 1.5px 3px 3px rgba(218,220,225,1)",
   "-moz-box-shadow": "0px 1.5px 3px 3px rgba(218,220,225,1)",
   "box-shadow": "0px 1.5px 3px 3px rgba(218,220,225,1)",
+  display: "flex",
+  flexDirection: "column",
 
   a: {
     color: "black",
@@ -67,6 +69,8 @@ const BodyCard = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "$8",
+  flex: "1",
+  justifyContent: "space-between",
 });
 
 const ActionsContainer = styled("div", {

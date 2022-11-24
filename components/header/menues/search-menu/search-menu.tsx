@@ -1,7 +1,7 @@
 import { css } from "../../../../styles/stitches.config";
-import { Button } from "../../../button";
+import { Button } from "../../../button/button";
 import { FacebookIcon } from "../../../icons/facebook-icon";
-import { InputSearch } from "../../../inputs/input-search";
+import { InputSearch } from "../../../inputs/input-search/input-search";
 
 export const SearchMenu = () => {
   return (

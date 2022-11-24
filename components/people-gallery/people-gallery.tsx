@@ -59,19 +59,23 @@ export const PeopleGrid = styled("div", {
   w: "$full",
   px: "$6",
 
-  "@bp2": {
+  "@bp1": {
     gridTemplateColumns: "repeat(2, 1fr)",
   },
 
-  "@bp3": {
+  "@bp2": {
     gridTemplateColumns: "repeat(3, 1fr)",
   },
 
-  "@bp4": {
+  "@bp3": {
     gridTemplateColumns: "repeat(4, 1fr)",
   },
 
-  "@bp5": {
+  "@bp4": {
     gridTemplateColumns: "repeat(5, 1fr)",
+  },
+
+  "@bp5": {
+    gridTemplateColumns: "repeat(6, 1fr)",
   },
 });

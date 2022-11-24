@@ -1,8 +1,8 @@
 import { css, styled } from "../../styles/stitches.config";
-import { PagesMenu } from "./menues/pages-menu";
-import { SearchMenu } from "./menues/search-menu";
-import { UserMenu } from "./menues/user-menu";
-import { PersonProps } from "../card";
+import { PagesMenu } from "./menues/pages-menu/pages-menu";
+import { SearchMenu } from "./menues/search-menu/search-menu";
+import { UserMenu } from "./menues/user-menu/user-menu";
+import { PersonProps } from "../card/card";
 
 export const Header = ({ user }: HeaderProps) => (
   <header className={headerStyles()}>

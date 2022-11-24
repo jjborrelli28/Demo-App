@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { PeopleGallery } from ".";
-import { Card } from "../card";
+import { PeopleGallery } from "./people-gallery";
+import { Card } from "../card/card";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
