@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=8bdcb0eee403"
+    "chromatic": "npx chromatic --project-token=8bdcb0eee403 --exit-zero-on-changes"
   },
   "dependencies": {
     "@stitches/core": "^1.2.8",
