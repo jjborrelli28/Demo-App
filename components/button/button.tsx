@@ -21,7 +21,8 @@ export const Button = ({
       {...restProps}
     >
       {children}
-      {variant === "rectangle" && active && <LowerLine />} extra text
+      {variant === "rectangle" && active && <LowerLine />} extra text [add more
+      extra text]
     </BaseButton>
   );
 };
