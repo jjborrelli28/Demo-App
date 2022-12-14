@@ -33,8 +33,9 @@ const lightTheme = {
   gainsboro: "#dadce1",
   graniteGray: "#6b6965",
   vampireBlack: "#050505",
-  aliceBlue: "#feeaff", //"#e7f3ff",
+  aliceBlue: "#e7f3ff",
   blueCrayola: "#1876f2",
+  lightPink: "#feeaff", 
 };
 
 const theme = {
