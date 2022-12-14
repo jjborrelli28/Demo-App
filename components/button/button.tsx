@@ -13,7 +13,7 @@ export const Button = ({
       variant={variant}
       onClick={onClick}
       css={{
-        backgroundColor: variant === "round" && active && "$lightPink", // "$aliceBlue",
+        backgroundColor: variant === "round" && active && "$black", // "$aliceBlue",
         "&:hover": {
           backgroundColor: variant === "round" && active && "$azureishWhite",
         },
@@ -76,7 +76,7 @@ const BaseButton = styled("button", {
         },
       },
       primary: {
-        backgroundColor: "$lightPink", // "$aliceBlue",
+        backgroundColor: "$black", // "$aliceBlue",
         w: "$full",
         color: "$blueCrayola",
         fontSize: "$base",
